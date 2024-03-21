@@ -1,4 +1,4 @@
-import { twoSum } from "../two-sum";
+import { twoSum } from "../src/two-sum";
 
 describe('twoSum', () => {
     it('should return correct indices for a valid target', () => {
