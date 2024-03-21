@@ -1,0 +1,1 @@
+import { isValid } from "../20-valid-parentheses";
