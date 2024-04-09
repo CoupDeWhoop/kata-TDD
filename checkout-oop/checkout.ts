@@ -1,5 +1,5 @@
 import { Discount } from "./Discount";
-import { Itemtype, itemFactory } from "./item";
+import { itemFactory } from "./item";
 
 export class Store {
     constructor(private discountList?: Discount[]) {}
