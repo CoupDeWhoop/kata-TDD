@@ -2,8 +2,8 @@ var map1 = new Map();
 map1.set(1, "1p");
 map1.set(2, "2p");
 map1.set(3, "3p");
-console.log(map1);
-var tillContents = {
+// console.log(map1);
+var object1 = {
     200: 3,
     500: 2,
     100: 5,
@@ -14,12 +14,20 @@ var tillContents = {
     1: 500,
     10: 50,
 };
+var object2 = {
+    brian: 2,
+    alan: 1,
+    charlie: 3,
+    eric: 5,
+    dez: 4,
+};
 // sorts ascending
-var sorted = Object.entries(tillContents).sort(function (a, b) { return Number(b[0]) - Number(a[0]); });
-var sortedMap = new Map(sorted);
-console.log(sortedMap, sortedMap.get("5")
+var array = Object.entries(object2);
+var sorted = array.sort(function (a, b) { return Number(a[1]) - Number(b[1]); });
 // also sorts ascending
-// Object.entries(tillContents).sort(
+// const sorted = array.sort(
 //   ([keya], [keyb]) => Number(keyb) - Number(keya)
 // )
-);
+var sortedMap = new Map(sorted);
+console.log(array);
+console.log(sorted, sortedMap, sortedMap.get("5"));
